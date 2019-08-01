@@ -1,0 +1,14 @@
+{
+  "name": "know-anime",
+  "version": "1.0.0",
+  "description": "Simple desktop app to get information about your favourite anime.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Guyson",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^6.0.0"
+  }
+}
