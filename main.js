@@ -1,12 +1,13 @@
 const electron = require("electron");
 const url = require("url");
 const path = require("path");
+const getInfo = require("./script");
 
 const { app, BrowserWindow } = electron;
 
 let mainWindow;
 
-const boot = () => {
+const load = () => {
   //Create new window
   mainWindow = new BrowserWindow({
     height: 800,
@@ -24,7 +25,13 @@ const boot = () => {
       slashes: true
     })
   );
+
 };
+
+const boot = () => {
+  load();
+  getInfo();
+}
 
 //Listen for app to be ready
 app.on("ready", boot);
