@@ -28,17 +28,14 @@ const load = () => {
   );
 
   //Build Menu
-  //mainWindow.removeMenu();
+  mainWindow.removeMenu();
 };
 
 //Catch Item:add
-ipcMain.on("item:add", async(e, item) => {
+ipcMain.on("item:add", async (e, item) => {
   const input = await getInfo(item);
   mainWindow.webContents.send("user:input", input);
 });
-
-
-
 
 //Listen for app to be ready
 app.on("ready", load);
