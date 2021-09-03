@@ -9,7 +9,7 @@
   "author": "Guyson",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^6.0.0"
+    "electron": "^9.4.0"
   },
   "dependencies": {
     "axios": "^0.21.1"
